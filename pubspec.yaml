@@ -1,6 +1,6 @@
 name: flutter_root_jailbreak
 description:  a plugin to detect whether Android is rooted and whether iOS is jailbroken
-version: 2.0.1
+version: 2.0.2
 homepage: https://github.com/abu0306/flutter_root_jailbreak.git
 
 environment:
