@@ -1,15 +1,22 @@
 # flutter_root_jailbreak
 
-A new flutter plugin project.
+This plugin is very easy to get a status to detect whether the Android device is rooted and whether
+the iOS device is jailbroken
 
-## Getting Started
+install:
+```dart
+dependencies:
+  flutter_root_jailbreak: ^2.0.2
+```
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+use:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
 
+//The way to check the root status of an Android device is：
+FlutterRootJailbreak.isRooted
+
+// The way to check the jailbreak status for iOS devices is：
+FlutterRootJailbreak.isJailBroken
+
+```
