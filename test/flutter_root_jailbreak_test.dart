@@ -8,13 +8,11 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return '42';
-    });
+    channel.setMethodCallHandler((call) async => '42');
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    channel.setMethodCallHandler((call) async => null);
   });
 
   test('isJailBroken', () async {
